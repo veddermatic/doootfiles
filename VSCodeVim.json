@@ -1,0 +1,67 @@
+// These are the overrides I have
+{
+"vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "O"],
+      "after": ["O", "<esc>", "j"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "after": ["o", "<esc>", "j"]
+    },
+    {
+      "before": ["<leader>", "6"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.view.explorer",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "4"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.closeActiveEditor",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "1"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.previousEditor",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "2"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.nextEditor",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "vim.leader": ",",
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": false,
+  "editor.minimap.enabled": false,
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.ignorecase": false,
+  "vim.smartcase": false,
+  }
